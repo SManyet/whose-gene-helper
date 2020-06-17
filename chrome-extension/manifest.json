@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Biohacking Helper",
+    "version": "0.1",
+    "permissions": [
+        "clipboardRead",
+        "clipboardWrite"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "browser_action": {
+        "default_icon": "dna.png"
+    }
+}
